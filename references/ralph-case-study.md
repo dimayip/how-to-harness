@@ -1,6 +1,6 @@
 # Case Study: 从"想做个 AI 循环"到 Ralph Harness 的完整推导过程
 
-> 本文档是 how-to-harness skill 的**真实案例教材**。用户 bellchen 带着一个模糊的想法"基于 OpenAI Harness Engineering 给我的排障 AI Agent 做个自优化循环"进来，通过 9 轮对话推导出了完整的 Ralph Harness 系统方案。
+> 本文档是 how-to-harness skill 的**真实案例教材**。用户 dimayip 带着一个模糊的想法"基于 OpenAI Harness Engineering 给我的排障 AI Agent 做个自优化循环"进来，通过 9 轮对话推导出了完整的 Ralph Harness 系统方案。
 
 ## 0. 初始状态
 
@@ -59,7 +59,7 @@ D. 评测体系（Gold Set + Harness）
 **问题**：
 ```
 R. Ralph 自身（循环自驱）
-A. 管理者 bellchen
+A. 管理者 dimayip
 B. Owner（产品线负责人）
 C. 客服（终端用户）
 ```

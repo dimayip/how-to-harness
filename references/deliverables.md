@@ -395,7 +395,7 @@ entity_name:
 
 | # | Task | Executor | 时长 | 依赖 | 状态 |
 |---|------|----------|------|------|------|
-| T1 | 任务 A | bellchen | 30 min | - | 🟡 |
+| T1 | 任务 A | dimayip | 30 min | - | 🟡 |
 | T2 | 任务 B | AI agent | 1 h | T1 | 🟡 |
 
 ---
