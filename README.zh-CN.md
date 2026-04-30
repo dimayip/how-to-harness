@@ -181,11 +181,28 @@ how-to-harness/
 
 ---
 
+## 安装
+
+通过 [skills.sh](https://skills.sh) 一键安装（支持 Claude Code / Cursor / Codex / CodeBuddy / OpenCode 等 50+ agent）：
+
+```bash
+# 全局安装（所有项目可用）
+npx skills add dimayip/how-to-harness -g -a claude-code
+
+# 项目级安装（跟随项目提交）
+npx skills add dimayip/how-to-harness -a codebuddy
+```
+
+或手动把整个目录放到你的 agent skills 目录下，例如
+`~/.claude/skills/how-to-harness/` 或 `.codebuddy/skills/how-to-harness/`。
+
+兼容 [Agent Skills Specification](https://agentskills.io)。
+
 ## 如何在 AI agent 中使用这个 skill
 
 支持 skill 加载的平台（CodeBuddy / Claude skills 等）：
 
-1. 把整个目录放到平台的 skills 文件夹下（例如 `.codebuddy/skills/how-to-harness/`）；
+1. 用 `npx skills add dimayip/how-to-harness` 一键安装（见上），或手动把整个目录放到平台的 skills 文件夹下（例如 `.codebuddy/skills/how-to-harness/`）；
 2. 当用户的请求明确涉及闭环 / 自优化 / Agent-loop / 评测驱动（提到 Harness Engineering / Ralph / LLM-as-judge / gatekeeper 等），agent 会加载本 skill 的 `SKILL.md`；
 3. `references/` 下的文件**按需加载**——agent 只在当前对话真正需要决策清单、产物模板或参考案例时才读，让 `SKILL.md` 本身保持精简。
 

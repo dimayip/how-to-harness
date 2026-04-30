@@ -181,11 +181,28 @@ how-to-harness/
 
 ---
 
+## Install
+
+Via [skills.sh](https://skills.sh) (works for Claude Code / Cursor / Codex / CodeBuddy / OpenCode / 50+ agents):
+
+```bash
+# global (available in all projects)
+npx skills add dimayip/how-to-harness -g -a claude-code
+
+# project-only (committed with your repo)
+npx skills add dimayip/how-to-harness -a codebuddy
+```
+
+Or drop the repo manually into your agent's skills directory, e.g.
+`~/.claude/skills/how-to-harness/` or `.codebuddy/skills/how-to-harness/`.
+
+Compatible with the [Agent Skills Specification](https://agentskills.io).
+
 ## How to use this skill with an AI agent
 
 On platforms that support skill loading (CodeBuddy, Claude skills, or similar):
 
-1. Place this directory under the platform's skills folder (e.g. `.codebuddy/skills/how-to-harness/`).
+1. Install it via `npx skills add dimayip/how-to-harness` (see above) — or place this directory under the platform's skills folder (e.g. `.codebuddy/skills/how-to-harness/`).
 2. When the user's request clearly involves closed-loop / self-optimizing / agent-loop / eval-driven systems (mentions of Harness Engineering / Ralph / LLM-as-judge / gatekeeper, etc.), the agent loads this skill's `SKILL.md`.
 3. Files under `references/` are loaded **on demand** — the agent pulls them only when the current turn genuinely needs the decision checklist, a deliverable template, or the case study, keeping `SKILL.md` itself lean.
 
