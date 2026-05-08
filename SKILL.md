@@ -1,7 +1,7 @@
 ---
 name: how-to-harness
 description: >
-  A domain-specific facilitation framework for designing Harness-style closed-loop, self-optimizing, human-steer+agent-execute systems — Ralph loops, LLM-as-judge harnesses, evaluation-driven improvement pipelines, tiered-automation governance, gatekeeper workflows, AI agent autonomy systems, or any architecture where agents execute and humans steer through gates. Use this skill whenever the user says things like "帮我设计一个 AI 闭环 / 自优化系统"、"Ralph loop"、"Harness Engineering"、"评测驱动的改进回路"、"LLM-as-judge 体系"、"闸门分级 / 熔断 / 升级路径"、"自治治理 Agent系统"、"设计自执行但人类掌舵的系统", or when the topic explicitly involves agent autonomy, evaluation harnesses, steering/gating mechanisms, idempotent/resumable loops, tiered automation with escalation, or closed-loop improvement. This skill is fully self-contained: it internalizes Socratic brainstorming discipline + mainstream design-document schemas + Harness methodology hard constraints (Eval-first, Gates-not-code, Idempotent & resumable loops, Small reversible steps, Automation tiers with escalation, Asset versioning, Human time budget as first-class constraint) as non-negotiable checks on every decision. The final deliverable is tailored to the user's real need (PRD / Design Doc / RFC / Kickoff checklist / ADR / One-Pager), not a fixed format.
+  专用于设计 Harness-style 闭环/自优化/人类掌舵+Agent执行系统的领域引导框架。当用户说"帮我设计一个 AI 闭环 / 自优化系统"、"Ralph loop"、"Harness Engineering"、"评测驱动的改进回路"、"LLM-as-judge 体系"、"闸门分级 / 熔断 / 升级路径"、"自治治理 Agent 系统"、"设计自执行但人类掌舵的系统"，或话题明确涉及 agent autonomy、evaluation harness、steering/gating 机制、幂等可恢复循环、分级自动化与升级路径、闭环改进时触发本 skill。
 ---
 
 # How to Harness · 闭环 / 自优化系统的设计引导框架
